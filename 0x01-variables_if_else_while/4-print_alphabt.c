@@ -1,28 +1,31 @@
 #include <stdio.h>
+
 /**
- * main - Enntry point
+ * main - Entry point
  *
- * Return: Always 0 (Success\correct)
+ * Return: Always 0 (Success)
  */
-
 int main(void)
-
 {
-	char alphabet;
-	
-	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+	int i;
+	int ch;
+
+	ch = 97;
+	i = 0;
+	while (i < 26)
 	{
-		if (alphabet == 'q')
-		continue;
-
-		else if (alphabet == 'e')
-		continue;
-
-		putchar(alphabet);
+		if ((ch != 101) && (ch != 113))
+		{
+			putchar(ch);
+			ch++;
+			i++;
+		}
+		else
+		{
+			ch++;
+			i++;
+		}
 	}
-
-	putchar('\n');
-
+	putchar(10);
 	return (0);
-
 }
