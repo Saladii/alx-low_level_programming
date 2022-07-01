@@ -2,29 +2,23 @@
 /**
  * main - Entry point
  *
- * Return: 0 (Success\correct)
+ * Return: Always 0 (Success)
  */
 int main(void)
-
 {
-	int n;
+	int i;
 
-	for (n = 48; n <= 57; n++)
+	i = 0;
+	while (i < 10)
 	{
-		putchar(n);
-	
-		if (n == 57)
+		putchar(i + '0');
+		if (i < 9)
 		{
-			break;
+			putchar(44);
+			putchar(32);
 		}
-
-		putchar(',');
-		putchar (' ');
-
+		i++;
 	}
-
-	putchar('\n');
-
+	putchar(10);
 	return (0);
-
 }
