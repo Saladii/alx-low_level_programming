@@ -6,7 +6,6 @@
  * @a: the array to print.
  * @n: array's length
  */
-
 void print_array(int *a, int n)
 {
 	int i;
@@ -15,6 +14,5 @@ void print_array(int *a, int n)
 	{
 		printf("%d", a[i]);
 	}
-	
 	printf("\n");
 }
