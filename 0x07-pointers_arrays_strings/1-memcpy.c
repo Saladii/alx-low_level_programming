@@ -1,41 +1,22 @@
 #include "main.h"
-
 #include <stdio.h>
-
 #include <string.h>
 
-
-
 /**
-
  * _memset - pinter function
-
  *
-
  * Return - s
-
  */
 
-
-
-char *_memset(char *s, char b, unsigned int n)
-
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
+	unsigned int i;
 
-    unsigned int i;
-
-    
-
-    for (i = 0; i < n; i++)
-
-    {
-
-        *(s + i) = b;
-
-    }
-
-    return (s);
-
+	i = 0;
+	while (i < n)
+	{
+		*(dest + i) = src[i];
+		i++;
+	}
+	return (dest);
 }
-
-
