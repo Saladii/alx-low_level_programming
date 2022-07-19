@@ -1,25 +1,25 @@
 #include "main.h"
-#include <stdio.h>
-#include <string.h>
 
 /**
- * main
+ * reverse_array - function that reverses the content
+ * of an array of itegers
+ * @a: an array of integers
+ * @n: the number of elements to swap
  *
- * Return
+ * Return: vocount1d
  */
 
 void reverse_array(int *a, int n)
 {
-	int i;
-	i = n - 1;
-	while (i >= 0)
+	int count1, count2, temp;
+
+	for (count1 = 1; count1 < n; count1++)
 	{
-		printf("%d", a[i]);
-		if (i != 0)
+		for (count2 = 0; count2 < (n - count1); count2++)
 		{
-			printf(", ");
+			temp = *(a + count2);
+			*(a + count2) = *(a + (count2 + 1));
+			*(a + (count2 + 1)) = temp;
 		}
-		i--;
 	}
-	printf("\n");
 }
