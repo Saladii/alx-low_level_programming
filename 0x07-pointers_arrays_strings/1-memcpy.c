@@ -3,9 +3,12 @@
 #include <string.h>
 
 /**
- * _memset - pinter function
+ * _memcpy - apointer function that copys the given amount
+ * @dest: to be coppie to
+ * @src: to be copied from
+ * @n: number of bytes to be copied
  *
- * Return - s
+ * Return: a pointer dest
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
