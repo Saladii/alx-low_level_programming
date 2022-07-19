@@ -4,13 +4,17 @@
 
 /**
  * _memset - pinter function
+ * @s: pointer to address of byte
+ * @b: byte to fill
+ * @n: number of fills
  *
- * Return - s
+ * Return: a pointer
  */
 
 char *_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i;
+
 	for (i = 0; i < n; i++)
 	{
 		*(s + i) = b;
