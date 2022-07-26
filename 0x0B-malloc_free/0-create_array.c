@@ -3,13 +3,12 @@
 #include <stdio.h>
 
 /**
- * *create_array - array function
+ * create_array - array function
  * @size: size of the array
  * @c: character
  *
- * Return - a pointer l to the array
+ * Return: a pointer an array or NULL
  */
-
 char *create_array(unsigned int size, char c)
 {
 unsigned int i;
