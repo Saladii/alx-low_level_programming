@@ -19,6 +19,11 @@ for (i = 0; i < size; i++)
 {
     *(l + i) = c;
 }
+if (l == NULL)
+{
+    putchar("\n");
+    return(NULL);
+}
 if (size == 0)
 {
     return(NULL);
