@@ -31,4 +31,5 @@ else
 {
 return (l);
 }
+free(l);
 }
