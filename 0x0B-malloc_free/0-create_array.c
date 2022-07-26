@@ -7,7 +7,7 @@
  * @size: size of the array
  * @c: character
  *
- * Return - a pointer to the array
+ * Return - a pointer l to the array
  */
 
 char *create_array(unsigned int size, char c)
@@ -18,7 +18,7 @@ l = malloc(size * sizeof(char));
 if (l == NULL)
 {
 putchar('\n');
-return(NULL);
+return (NULL);
 }
 for (i = 0; i < size; i++)
 {
@@ -26,10 +26,10 @@ for (i = 0; i < size; i++)
 }
 if (size == 0)
 {
-return(NULL);
+return (NULL);
 }
 else
 {
-return(l);
+return (l);
 }
 }
