@@ -28,7 +28,7 @@ s[c] = s1[c];
 }
 for (k = i + 1; k <= z; k++)
 {
-s[c] = s2[c];
+s[k] = s2[k];
 }
 return (s);
 free(s);
