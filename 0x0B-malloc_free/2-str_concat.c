@@ -29,5 +29,6 @@ for (c = i + 1; c <= y; y++)
 {
 s[c] = s2[c];
 }
+return (s);
 free(s);
 }
