@@ -14,7 +14,6 @@ char *str_concat(char *s1, char *s2)
 int i = strlen(s1);
 int y = strlen(s2);
 int c;
-int k;
 int z = i + y;
 char *s;
 s = malloc(z + 1 *sizeof(char));
@@ -26,9 +25,9 @@ for (c = 0; c < i; c++)
 {
 s[c] = s1[c];   
 }
-for (k = i + 1; k <= z; k++)
+for (c = i; c <= z; c++)
 {
-s[k] = s2[k];
+s[c] = s2[c];
 }
 return (s);
 free(s);
