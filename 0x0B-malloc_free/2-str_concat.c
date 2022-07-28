@@ -25,7 +25,7 @@ for (c = 0; c <= i; c++)
 {
 s[c] = s1[c];   
 }
-for (c = i + 1; c <= y; c++)
+for (c = i + 1; c <= z; c++)
 {
 s[c] = s2[c];
 }
