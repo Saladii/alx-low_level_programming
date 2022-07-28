@@ -39,5 +39,10 @@ char *_strdup(char *str)
         l[0] = str[0];
         return (l);
     }
+    if (l == NULL)
+    {
+        return (NULL);/* code */
+    }
+    
     free(l);
 }
