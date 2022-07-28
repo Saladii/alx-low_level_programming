@@ -33,9 +33,9 @@ for (c = 0; c < i; c++)
 {
 s[c] = s1[c];   
 }
-for (c = i; c <= y; c++)
+for (c = i; c <= z; c++)
 {
-s[c] = s2[c -i];
+s[c] = s2[c - i];
 }
 return (s);
 free(s);
