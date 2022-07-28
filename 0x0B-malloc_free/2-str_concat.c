@@ -15,7 +15,7 @@ int i = strlen(s1);
 int y = strlen(s2);
 int c;
 int z = i + y;
-char s;
+char *s;
 s = malloc(z *sizeof(char));
 if (s == NULL)
 {
