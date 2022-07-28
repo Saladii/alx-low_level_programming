@@ -11,6 +11,8 @@
  */
 char *str_concat(char *s1, char *s2)
 {
+int i, y, c, z;
+char *s;
 if (s1 == NULL)
 {
 s1 = "";
@@ -18,12 +20,11 @@ s1 = "";
 else if (s2 == NULL)
 {
 s2 = ""; 
-}   
-int i = strlen(s1);
-int y = strlen(s2);
-int c;
-int z = i + y;
-char *s;
+}
+i = strlen(s1);
+y = strlen(s2);
+c;
+z = i + y;
 s = malloc(z + 1 *sizeof(char));
 if (s == NULL)
 {
