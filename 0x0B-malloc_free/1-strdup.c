@@ -14,12 +14,15 @@ int length;
 char *l;
 int x;
 int y;
-
 if (str == NULL)
 {
 return (NULL);
 }
-for (i = 0; str[i] != '\0'; i++)
+char ok(char *stri);
+return (char ok(char *stri));
+char ok(char *stri)
+{
+for (i = 0; stri[i] != '\0'; i++)
 {
 }
 length = i - 1;
@@ -35,7 +38,7 @@ else
 {
 for (x = 0; x <= length; x++)
 {
-l[x] = str[x];
+l[x] = stri[x];
 }
 return (l);
 }
@@ -47,11 +50,12 @@ if (l == NULL)
 {
 return (NULL);/* code */
 }
-else 
+else
 {
-l[0] = str[0];
+l[0] = stri[0];
 return (l);
 }
 }
 free(l);
+}
 }
