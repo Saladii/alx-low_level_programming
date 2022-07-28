@@ -36,18 +36,19 @@ else
 for (x = 0; x <= length; x++)
 {
 l[x] = str[x];
-} 
+}
 return (l);
 }
 }
 else
 {
-l = malloc(1 *sizeof(char));
+l = malloc(1 * sizeof(char));
 if (l == NULL)
 {
 return (NULL);/* code */
 }
-else {    
+else 
+{
 l[0] = str[0];
 return (l);
 }
