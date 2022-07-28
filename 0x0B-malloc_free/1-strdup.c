@@ -27,22 +27,30 @@ char *_strdup(char *str)
     if (length > 0)
     {
     l = malloc(y * sizeof(char));
+    if (l == NULL)
+    {
+        return (NULL);/* code */
+    }
+    else
+    {
     for (x = 0; x <= length; x++)
     {
         l[x] = str[x];
     } 
     return (l);
     }
+    }
     else
     {
         l = malloc(1 * sizeof(char));
-        l[0] = str[0];
-        return (l);
-    }
-    if (l == NULL)
+        if (l == NULL)
     {
         return (NULL);/* code */
     }
-    
+    else {    
+        l[0] = str[0];
+        return (l);
+    }
+    }
     free(l);
 }
