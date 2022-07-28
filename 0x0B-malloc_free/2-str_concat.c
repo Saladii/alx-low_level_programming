@@ -27,7 +27,7 @@ s[c] = s1[c];
 }
 for (c = i; c <= z; c++)
 {
-s[c] = s2[c];
+s[c] = s2[c - i];
 }
 return (s);
 free(s);
