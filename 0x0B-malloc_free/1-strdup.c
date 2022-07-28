@@ -18,10 +18,7 @@ if (str == NULL)
 {
 return (NULL);
 }
-return (char ok(char *stri));
-char *ok(char *stri)
-{
-for (i = 0; stri[i] != '\0'; i++)
+for (i = 0; str[i] != '\0'; i++)
 {
 }
 length = i - 1;
@@ -37,7 +34,7 @@ else
 {
 for (x = 0; x <= length; x++)
 {
-l[x] = stri[x];
+l[x] = str[x];
 }
 return (l);
 }
@@ -51,10 +48,9 @@ return (NULL);/* code */
 }
 else
 {
-l[0] = stri[0];
+l[0] = str[0];
 return (l);
 }
 }
 free(l);
-}
 }
