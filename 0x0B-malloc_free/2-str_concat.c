@@ -17,7 +17,7 @@ int c;
 int k;
 int z = i + y;
 char *s;
-s = malloc(z + 2 *sizeof(char));
+s = malloc(z + 1 *sizeof(char));
 if (s == NULL)
 {
     return (NULL);
