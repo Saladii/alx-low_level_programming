@@ -26,7 +26,7 @@ length = i - 1;
 y = i + 1;
 if (length > 0)
 {
-l = malloc(y * sizeof(char));
+l = malloc(y *sizeof(char));
 if (l == NULL)
 {
 return (NULL);/* code */
@@ -42,7 +42,7 @@ return (l);
 }
 else
 {
-l = malloc(1 * sizeof(char));
+l = malloc(1 *sizeof(char));
 if (l == NULL)
 {
 return (NULL);/* code */
