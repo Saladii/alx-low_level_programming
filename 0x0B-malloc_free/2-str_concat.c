@@ -16,6 +16,10 @@ int y = strlen(s2);
 int c;
 int z = i + y;
 char *s;
+if (s1 == NULL)
+s1 = "";
+if (s2 == NULL)
+s2 = "";
 s = malloc(z + 1 *sizeof(char));
 if (s == NULL)
 {
