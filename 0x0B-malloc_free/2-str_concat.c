@@ -16,7 +16,7 @@ int y = strlen(s2);
 int c;
 int z = i + y;
 char s;
-s = malloc(z *sizeof(xhar));
+s = malloc(z *sizeof(char));
 if (s == NULL)
 {
     return (NULL);
