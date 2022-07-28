@@ -29,6 +29,7 @@ char *_strdup(char *str)
     {
         l[x] = str[x];
     } 
+    return (l);
     }
     else
     {
