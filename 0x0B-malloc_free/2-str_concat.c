@@ -11,15 +11,15 @@
  */
 char *str_concat(char *s1, char *s2)
 {
+if (s1 == NULL)
+s1 = "";
+if (s2 == NULL)
+s2 = "";    
 int i = strlen(s1);
 int y = strlen(s2);
 int c;
 int z = i + y;
 char *s;
-if (s1 == NULL)
-s1 = "";
-if (s2 == NULL)
-s2 = "";
 s = malloc(z + 1 *sizeof(char));
 if (s == NULL)
 {
@@ -31,7 +31,7 @@ s[c] = s1[c];
 }
 for (c = i; c <= z; c++)
 {
-s[c] = s2[c - i];
+s[c] = s2[c -i];
 }
 return (s);
 free(s);
