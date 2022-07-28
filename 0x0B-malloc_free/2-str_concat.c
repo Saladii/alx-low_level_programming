@@ -15,7 +15,7 @@ if (s1 == NULL)
 {
 s1 = "";
 }
-else (s2 == NULL)
+else if (s2 == NULL)
 {
 s2 = ""; 
 }   
