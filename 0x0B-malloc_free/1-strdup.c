@@ -18,9 +18,8 @@ if (str == NULL)
 {
 return (NULL);
 }
-char ok(char *stri);
 return (char ok(char *stri));
-char ok(char *stri)
+char *ok(char *stri)
 {
 for (i = 0; stri[i] != '\0'; i++)
 {
