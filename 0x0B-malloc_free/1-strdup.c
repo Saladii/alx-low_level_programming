@@ -33,6 +33,9 @@ char *_strdup(char *str)
     }
     else
     {
-        return ("");
+        l = malloc(1 * sizeof(char));
+        l[x] = str[x];
+        return (l);
     }
+    free(l);
 }
