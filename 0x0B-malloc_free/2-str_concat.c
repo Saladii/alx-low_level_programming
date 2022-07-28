@@ -22,7 +22,7 @@ if (s == NULL)
 {
     return (NULL);
 }
-for (c = 0; c <= i; c++)
+for (c = 0; c < i; c++)
 {
 s[c] = s1[c];   
 }
