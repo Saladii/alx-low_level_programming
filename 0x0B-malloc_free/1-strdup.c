@@ -47,7 +47,7 @@ if (l == NULL)
 {
 return (NULL);/* code */
 }
-else 
+else
 {
 l[0] = str[0];
 return (l);
