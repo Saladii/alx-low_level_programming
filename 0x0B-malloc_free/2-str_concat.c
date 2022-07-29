@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- * _strdup - a pointer function
+ * str_concat - a pointer function
  * @s1: a string argumment
  * @s2: a string argumment
  *
@@ -31,7 +31,7 @@ return (NULL);
 }
 for (c = 0; c < i; c++)
 {
-s[c] = s1[c];  
+s[c] = s1[c];
 }
 for (c = i; c <= z; c++)
 {
