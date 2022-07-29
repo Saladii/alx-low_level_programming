@@ -1,51 +1,43 @@
 #include "main.h"
 #include <stdlib.h>
-#include <string.h>
 
 /**
- * str_concat - a pointer function
- * @s1: a string argumment
- * @s2: a string argumment
+ * alloc_grid - returns a pointer to a 2 dimensional array of integers.
+ * @width: width of the array.
+ * @height: height of the array.
  *
- * Return: a string as a pointer
+ * Return: pointer of an array of integers
  */
 int **alloc_grid(int width, int height)
 {
-    int **ok;
-    int i;
-    int j;
-    if (width > 0 && height > 0)
-    {
-    ok = malloc(height *sizeof(int *));
-    if (ok == NULL)
-    {
-        free(ok);
-        return (NULL);
-    }
-    for (i = 0; i < height; i++)
-    {
-        ok[i] = malloc(width *sizeof(int*));
-        if (ok[i] == NULL)
-        {
-            for (i--; i >= 0; i--)
-				free(ok[i]);
-			free(ok);
+	int **gridout;
+	int i, j;
+
+	if (width < 1 || height < 1)
+		return (NULL);
+
+	gridout = malloc(height * sizeof(int *));
+	if (gridout == NULL)
+	{
+		free(gridout);
+		return (NULL);
+	}
+
+	for (i = 0; i < height; i++)
+	{
+		gridout[i] = malloc(width * sizeof(int));
+		if (gridout[i] == NULL)
+		{
+			for (i--; i >= 0; i--)
+				free(gridout[i]);
+			free(gridout);
 			return (NULL);
-        }
-    }
-    for (i = 0; i < height; i++)
-    {
-        for (j = 0; j < width; j++)
-        {
-            ok[i][j] = 0;
-        }
-        
-    }
-    return (ok);
-    free(ok);
-    }
-    else
-    {
-        return (NULL);
-    }
+		}
+	}
+
+	for (i = 0; i < height; i++)
+		for (j = 0; j < width; j++)
+			gridout[i][j] = 0;
+
+	return (gridout);
 }
