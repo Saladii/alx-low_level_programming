@@ -1,4 +1,5 @@
-#include "holberton.h"
+#include "main.h"
+#include <stdlib.h>
 
 /**
  *array_range - create array of integers
@@ -10,7 +11,7 @@
 int *array_range(int min, int max)
 {
 int *ar;
-int i, x, total;
+int i, total;
 
 if (min > max)
 	return (NULL);
@@ -23,7 +24,7 @@ if (ar == NULL)
 	return (NULL);
 
 for (i = 0, min<= max; i++, min++)
-	ar[i] = x;
+	ar[i] = min;
 
 return (ar);
 
