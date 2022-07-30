@@ -23,7 +23,7 @@ ar = malloc((total + 1) * sizeof(int));
 if (ar == NULL)
 	return (NULL);
 
-for (i = 0, min<= max; i++, min++)
+for (i = 0, min <= max; i++, min++)
 	ar[i] = min;
 
 return (ar);
