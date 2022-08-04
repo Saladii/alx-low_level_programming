@@ -1,4 +1,5 @@
 #include "variadic_functions.h"
+
 /**print_numbers -a fubction that accepts tww arguments
  * @separator: a string argument
  * @n:the vardic argument that takes number of to be printed
@@ -20,5 +21,5 @@ printrf("%s", separator);
 }
 }
 printf("\n");
-va_end(args);
+va_end(pp);
 }
