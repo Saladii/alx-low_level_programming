@@ -1,12 +1,14 @@
 #include "variadic_functions.h"
 #include "stdarg.h"
 #include "stdio.h"
+
 /**
  * sum_them_all - varadic function
  * @n:number of argument
  * 
  * Return: sum of paramaters
  */
+
 int sum_them_all(const unsigned int n, ...)
 {
 va_list ok;
